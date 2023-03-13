@@ -9,6 +9,8 @@ const inactiveCardColour = Color(0xFF111328);
 const bottomContainerColour = Color(0xFFEB1555);
 
 class InputPage extends StatefulWidget {
+  const InputPage({super.key});
+
   @override
   _InputPageState createState() => _InputPageState();
 }
@@ -42,7 +44,7 @@ class _InputPageState extends State<InputPage> {
   Widget build(BuildContext context) {
     return Scaffold(
       appBar: AppBar(
-        title: Text('BMI CALCULATOR'),
+        title: const Text('BMI CALCULATOR'),
       ),
       body: SafeArea(
         child: Column(
@@ -59,7 +61,7 @@ class _InputPageState extends State<InputPage> {
                       },
                       child: ReusableCard(
                         inactiveCardColour,
-                        IconContent(FontAwesomeIcons.mars, 'MALE'),
+                        const IconContent(FontAwesomeIcons.mars, 'MALE'),
                       ),
                     ),
                   ),
@@ -72,7 +74,7 @@ class _InputPageState extends State<InputPage> {
                     },
                     child: ReusableCard(
                       activeCardColour,
-                      IconContent(FontAwesomeIcons.venus, 'FEMALE'),
+                      const IconContent(FontAwesomeIcons.venus, 'FEMALE'),
                     ),
                   )),
                 ],
@@ -97,7 +99,7 @@ class _InputPageState extends State<InputPage> {
             ),
             Container(
               color: bottomContainerColour,
-              margin: EdgeInsets.only(top: 10.0),
+              margin: const EdgeInsets.only(top: 10.0),
               width: double.infinity,
               height: bottomContainerHeight,
             )
