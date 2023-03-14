@@ -12,15 +12,11 @@ class BMICalculator extends StatelessWidget {
     return MaterialApp(
       theme: ThemeData.dark().copyWith(
         brightness: Brightness.dark,
-        // Define the default brightness and colors.
         appBarTheme: const AppBarTheme(color: Color(0xFF0A0E21)),
-        // Define the default font family.
         scaffoldBackgroundColor: const Color(0xFF0A0E21),
-        // Define the default `TextTheme`. Use this to specify the default
         textTheme: const TextTheme(
           bodyLarge: TextStyle(color: Colors.green),
         ),
-// text styling for headlines, titles, bodies of text, and more.
       ),
       home: const InputPage(),
     );
